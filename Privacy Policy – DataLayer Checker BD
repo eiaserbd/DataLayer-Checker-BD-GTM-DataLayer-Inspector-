@@ -1,0 +1,81 @@
+# Privacy Policy – DataLayer Checker BD
+
+**Effective date:** 2026-05-11  
+**Extension name:** DataLayer Checker BD — GTM & DataLayer Inspector  
+**Developer:** Eiaser Hosen  
+**GitHub:** https://github.com/eiaserbd
+
+## Overview
+
+DataLayer Checker BD is a Chrome extension built to help users inspect and debug `window.dataLayer` events for Google Tag Manager (GTM) workflows.
+
+Your privacy is important. This policy explains what data the extension accesses, how it is used, and what control you have.
+
+## Data We Access
+
+The extension may access the following while you browse websites:
+
+- `window.dataLayer` event payloads pushed on pages you visit
+- Current page URL/context (used to reset capture when the page/route changes)
+- User-configured settings stored in extension storage (for example, GTM workspace URL, theme preference, snapshot data)
+
+## How Data Is Used
+
+Data is used only to provide extension features, including:
+
+- Real-time event capture and display in the popup
+- Filtering and searching captured events
+- Flat/JSON inspection views
+- Copy/export/snapshot functionality
+- Resetting old captures when page context changes
+
+## Data Storage
+
+- Data is stored locally using Chrome extension storage (`chrome.storage.local`).
+- Snapshot and captured events remain in local browser storage until cleared by the user or overwritten by normal extension behavior.
+- The extension does **not** require account sign-in.
+
+## Data Sharing
+
+- We do **not** sell your data.
+- We do **not** share captured payload data with third parties.
+- We do **not** transmit captured event data to our servers.
+
+## Permissions and Why They Are Needed
+
+- **`storage`**: Save user settings, snapshots, and event buffers locally.
+- **`<all_urls>` host access**: Observe `dataLayer` events on websites where GTM/debugging is needed.
+- **Content script injection**: Connect page events to the extension UI for debugging.
+
+## User Controls
+
+You can:
+
+- Pause/resume event capture from the popup
+- Clear buffered events
+- Delete snapshots
+- Uninstall the extension at any time
+
+## Uninstall Behavior
+
+When uninstalling, Chrome may open the configured uninstall page:
+- https://bluenill.com/
+
+## Security
+
+We aim to keep the extension minimal and avoid unnecessary data processing.  
+No hidden data collection is intended.
+
+## Children’s Privacy
+
+This extension is not specifically directed to children under 13.
+
+## Changes to This Policy
+
+We may update this policy from time to time. The latest version will always be available in this repository and/or the Chrome Web Store listing.
+
+## Contact
+
+For questions about this policy:
+
+- GitHub: https://github.com/eiaserbd
